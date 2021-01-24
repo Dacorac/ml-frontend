@@ -14,3 +14,55 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.bg-color-gray-1 {
+  background-color: #EEEEEE !important;
+}
+
+.bg-color-gray-2 {
+  background-color: #999999 !important;
+}
+
+.bg-color-yellow {
+  background-color: #FFE600 !important;
+}
+
+.border-color-gray-1 {
+  border-color: #EEEEEE !important;
+}
+
+.border-color-gray-2 {
+  border-color: #999999 !important;
+}
+
+.margin-16{
+  margin: 16px;
+}
+
+.padding-32 {
+  padding-bottom: 32px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.ft-color-black {
+  color: #333333 !important;
+}
+
+.ft-color-gray-3 {
+  color: #666666 !important;
+}
