@@ -2,7 +2,6 @@
     display: flex;
     border-radius: 0 5px 5px 0;
     background-color: #EEEEEE;
-    border-color: #999999;
     border-left: 0px;
     height: 100% !important;
 }
@@ -11,10 +10,6 @@
     display: flex;
     margin-right: 0px !important;
     border-radius: 5px 0 0 5px;
-    border-color: #999999;
     width: 97% !important;
 }
 
-.navbar {
-    background-color: #FFE600 !important;
-}

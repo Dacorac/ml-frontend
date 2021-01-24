@@ -3,7 +3,7 @@ import ItemList from './../../src/components/ItemList/ItemList'
 
 const Home = () => {
     return ( 
-        <div>
+        <div className="bg-color-gray-1">
             <ItemList keyword="Motorola g" />
         </div>
      );

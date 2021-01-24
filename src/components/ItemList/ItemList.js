@@ -1,7 +1,8 @@
 import React from 'react';
-import Item from '../Item/Item'
+import { Container  } from 'react-bootstrap'
 import './ItemList.css'
 
+import Item from '../Item/Item'
 import { useQuery } from "react-query"
 import fetchItems from '../../services/items.service';
 
@@ -14,26 +15,26 @@ const ItemList = ({ keyword }) => {
 
     return (
         <div>
-            <h1>{keyword}</h1>
-            <p>Results:</p>
             {isLoading ? (
                 <span>Loading...</span>
             ) : error ? (
                 <span>Error: {error.message}</span>
             ) : data ? (
-                <ul>
-                <p></p>
+                <Container>
                 {data?.map((item) => (
-                    <Item 
-                        id={item.id}
-                        key={item.id}
-                        title={item.title}
-                        description={item.title}
-                        price={item.price?.amount}
-                        url={item.picture}
-                    />
+                    <div className="col-12">
+                        <Item 
+                            id={item.id}
+                            key={item.id}
+                            title={item.title}
+                            shipping={item.free_shiping}
+                            price={item.price?.amount}
+                            condition={item.condition}
+                            url={item.picture}
+                        />
+                    </div>
                 ))}
-                </ul>
+                </Container>
             ) : null}
         </div>
     );
