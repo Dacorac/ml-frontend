@@ -1,11 +1,17 @@
 import React from 'react';
 import Item from '../Item/Item'
-import styles from './ItemList.module.css'
+import './ItemList.css'
 
 import { useQuery } from "react-query"
+import fetchItems from '../../services/items.service';
 
-const ItemList = ({keyword}) => {
-    const { data, isLoading, error, status } = useQuery({keyword: keyword});
+const useItems = (query) => {
+    return useQuery(["items", { query }], fetchItems);
+  };
+const ItemList = ({ keyword }) => {
+    
+    const { data, isLoading, error } = useItems(keyword);
+
     return (
         <div>
             <h1>{keyword}</h1>

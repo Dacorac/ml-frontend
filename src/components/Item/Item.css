@@ -3,7 +3,7 @@
     flex-direction: row;
 }
 
-.cardImage img{
+.card-image img{
     width: 90px;
     height: 90px;
 }

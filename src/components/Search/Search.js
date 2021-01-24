@@ -1,8 +1,8 @@
 import React from 'react';
 import './Search.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import { Navbar, Form, InputGroup, FormControl, Button } from 'react-bootstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Navbar, Form, FormControl, Button } from 'react-bootstrap'
 
 const Search = () => {
     return (
