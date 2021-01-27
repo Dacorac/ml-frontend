@@ -1,6 +1,6 @@
-const fetchItems = async ({ keyword }) => {
-    console.log(keyword)
-    const url = `https://ml-api-test-dc.herokuapp.com/api/items?q=${keyword}`
+const fetchItems = async ( keyword ) => {
+    console.log(keyword.queryKey[0])
+    const url = `https://ml-api-test-dc.herokuapp.com/api/items?q=${keyword.queryKey[0]}`
 
     return await fetch(url)
         .then(res => res.json())
