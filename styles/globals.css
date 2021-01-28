@@ -15,6 +15,10 @@ a {
   box-sizing: border-box;
 }
 
+.bg {
+  height: 100vh;
+}
+
 .bg-color-gray-1 {
   background-color: #EEEEEE !important;
 }

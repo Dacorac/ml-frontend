@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import * as QueryString from "query-string"
 import { useQuery } from "react-query"
 import { Link } from "react-router-dom";
 
+import { Context } from "../../src/store/Store";
 
 const fetchItems = async (query) => {
     console.log(query.queryKey[0])
@@ -33,6 +34,9 @@ const ItemsPage = ({ match, location }) => {
     
     const { data, isLoading, error } = useItems(parsed.search);
 
+    const [state, dispatch] = useContext(Context);
+    const { searchTerm } = state;
+
     return ( 
         <div>
             <p>
@@ -43,6 +47,7 @@ const ItemsPage = ({ match, location }) => {
                     <Link to={`/items/${item.id}`}>{item.id}</Link>                    
                 </div>
             ))}
+            {console.log(searchTerm)}
           </p>
         </div>
      );

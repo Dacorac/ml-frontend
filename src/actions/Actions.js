@@ -1,7 +1,7 @@
 import { SET_SEARCH_TERM } from "./../constants/action-types";
 
-const setSearchTerm = (payload) => {
+const SetSearchTerm = (payload) => {
     return { type: SET_SEARCH_TERM, payload }
 };
 
-export default setSearchTerm;
+export default SetSearchTerm;
