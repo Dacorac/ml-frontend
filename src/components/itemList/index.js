@@ -23,8 +23,8 @@ const ItemList = ({ keyword }) => {
                 {data?.map((item) => (
                     <div className="col-12">
                         <Item 
-                            id={item.id}
                             key={item.id}
+                            id={item.id}
                             title={item.title}
                             shipping={item.free_shiping}
                             price={item.price?.amount}

@@ -1,9 +1,12 @@
 import React from 'react';
+import ItemDetail from '../../src/components/itemDetail'
 
-const DetailPage = () => {
+const DetailPage = ({ match, location}) => {
+
     return ( 
         <div>
-            Detail
+            {console.log(match)}
+            <ItemDetail id={match.params.id} /> 
         </div>
      );
 }
