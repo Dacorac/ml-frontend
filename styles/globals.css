@@ -16,7 +16,8 @@ a {
 }
 
 .bg {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 .bg-color-gray-1 {
