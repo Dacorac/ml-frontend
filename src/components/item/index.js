@@ -11,7 +11,7 @@ const Item = ({id, title, shipping, condition, price, url}) => {
                     <img alt={title} src={url} />
                 </div>
                 <div className="card-content margin-16">
-                    <div className="price-box padding-32">
+                    <div className="price-box paddind-bt-32">
                         <h1 className="font-24 ft-color-black">$ {price}</h1>
                         { shipping ? <img alt="shipping" src="/icon/shipping@2x.png"/> : null }
                     </div>

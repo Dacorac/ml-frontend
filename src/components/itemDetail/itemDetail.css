@@ -1,0 +1,23 @@
+.detail-container {
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.detail-specs {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-specs_button {
+    width: 100%;
+}
+
+.detail-description__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-img__content {
+    display: flex;
+    justify-content: center;
+}
