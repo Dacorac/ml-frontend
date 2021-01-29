@@ -1,4 +1,6 @@
 import React from 'react';
+import NumberFormat from 'react-number-format';
+
 import fetchItemDetail from '../../services/detail.service'
 
 import { Button } from 'react-bootstrap';
@@ -27,7 +29,7 @@ const ItemDetail = ({id}) => {
                             {data?.title}
                         </span>
                         <span className="padding-b-32 font-46 bold">
-                            $ {data?.price.amount}
+                            <NumberFormat value={data?.price.amount} displayType={'text'} thousandSeparator={true} decimalScale={2} prefix={data?.price.currency} />
                         </span>
                         <Button variant="primary" type="button" className="detail-specs_button">Comprar</Button>                    
                     </div>
