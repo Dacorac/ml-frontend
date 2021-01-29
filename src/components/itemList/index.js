@@ -21,16 +21,18 @@ const ItemList = ({ keyword }) => {
             ) : data ? (
                 <Container>
                 {data?.map((item) => (
-                    <div className="col-12">
-                        <Item 
-                            key={item.id}
-                            id={item.id}
-                            title={item.title}
-                            shipping={item.free_shiping}
-                            price={item.price?.amount}
-                            condition={item.condition}
-                            url={item.picture}
-                        />
+                    <div key={item.id} className="row">
+                        <div  key={item.id}className="col-12">
+                            <Item 
+                                key={item.id}
+                                id={item.id}
+                                title={item.title}
+                                shipping={item.free_shiping}
+                                price={item.price?.amount}
+                                condition={item.condition}
+                                url={item.picture}
+                            />
+                        </div>
                     </div>
                 ))}
                 </Container>
