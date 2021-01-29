@@ -1,8 +1,15 @@
 const fetchItemDetail = async ( query ) => {
-    console.log(query.queryKey[0])
-    const url = `https://ml-api-test-dc.herokuapp.com/api/${query.queryKey[0]}`
+  console.log(query.queryKey[0])
+  const url = `https://ml-api-test-dc.herokuapp.com/api/items/${query.queryKey[0]}`
 
-    const response = await fetch(url)
-    const results = await response.json();
-    return results; 
-  };
+  return await fetch(url)
+    .then(res => res.json())
+    .then(response => {
+      const data = response.item
+      if(data) {
+        return data
+      }
+    });
+};
+
+export default fetchItemDetail;
