@@ -6,7 +6,7 @@ import ItemsPage from './pages/items'
 
 function Routes() {
     return (
-      <div style={{display: "flex"}}>
+      <div className="bg bg-color-gray-1" style={{display: "flex"}}>
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/items" exact component={ItemsPage} />

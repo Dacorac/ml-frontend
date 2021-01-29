@@ -1,4 +1,6 @@
 import '../styles/globals.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 import withReactRouter from "../next/with-react-router";
 import { QueryClientProvider, QueryClient } from "react-query"
 
