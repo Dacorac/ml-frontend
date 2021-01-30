@@ -1,17 +1,31 @@
 import React from 'react';
-import ItemList from '../itemList'
+import { Container  } from 'react-bootstrap'
+
+import Item from '../item'
 
 import withErrorBoundary from '../../hoc/withErrorBoundary'
 import withLoading from '../../hoc/withLoading'
 
-const ItemEnhance = withErrorBoundary(withLoading(ItemList));
-
 const ItemComponent = ({ data, isLoading, error }) => {
     return ( 
-        <>
-        <ItemEnhance data={data} isLoading={isLoading} error={error} />
-        </>
+        <Container>
+        {data?.map((item) => (
+            <div key={item.id} className="row">
+                <div  key={item.id}className="col-12">
+                    <Item 
+                        key={item.id}
+                        id={item.id}
+                        title={item.title}
+                        shipping={item.free_shiping}
+                        price={item.price?.amount}
+                        condition={item.condition}
+                        url={item.picture}
+                    />
+                </div>
+            </div>
+        ))}
+        </Container>
     );
 }
  
-export default ItemComponent;
+export default withErrorBoundary(withLoading(ItemComponent));
