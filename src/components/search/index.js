@@ -1,7 +1,7 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
 
-import { Context } from '../../store/Store'
+import { useAppContext } from '../../store/Store'
 import SetSearchTerm from '../../actions/Actions'
 
 import { Navbar, FormControl, Button, Form } from 'react-bootstrap'
@@ -9,7 +9,7 @@ import './search.css'
 
 const Search = () => {
     
-    const [state, dispatch] = useContext(Context);
+    const [_state, dispatch] = useAppContext();
     const [term, setTerm] = useState('')
     
     let history = useHistory();

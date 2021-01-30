@@ -1,4 +1,4 @@
-import React, { useReducer, createContext } from 'react';
+import React, { useReducer, createContext, useContext } from 'react';
 
 import SearchReducer from '../reducers/SearchReducer'
 
@@ -16,5 +16,6 @@ const Store = ({children}) => {
     );
 } 
 
-export const Context = createContext(initialState);
+const Context = createContext(initialState);
+export const useAppContext = () => useContext(Context);
 export default Store;

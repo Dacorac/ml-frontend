@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import ItemContainer from '../../src/components/itemContainer';
 
-import { Context } from "../../src/store/Store";
+import { useAppContext } from "../../src/store/Store";
 
 const ItemsPage = () => {
 
-  const [state, dispatch] = useContext(Context);
+  const [state, dispatch] = useAppContext();
   const { searchTerm } = state;
 
   return ( 
