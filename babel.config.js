@@ -5,10 +5,9 @@ module.exports = {
                 node: 'current'
             }
         }],
+        "next/babel",
         ['@babel/preset-react', {
-            targets: {
-                node: 'current'
-            }
+            runtime: "automatic"
         }]
     ]
 }
