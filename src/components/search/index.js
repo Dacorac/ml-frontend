@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
 
 import { useAppContext } from '../../store/Store'
-import SetSearchTerm from '../../actions/Actions'
+import setSearchTerm from '../../actions/Actions'
 
 import { Navbar, FormControl, Button, Form } from 'react-bootstrap'
 import './search.css'
@@ -18,7 +18,7 @@ const Search = () => {
 
     const handleButtonClick = (e) => {
         e.preventDefault();
-        dispatch(SetSearchTerm(term));
+        dispatch(setSearchTerm(term));
         history.push(`/items?search=${term}`);
     }
 
