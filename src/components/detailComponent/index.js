@@ -1,19 +1,13 @@
 import React from 'react';
 import NumberFormat from 'react-number-format';
 
-import fetchItemDetail from '../../services/detail.service'
-
 import { Button } from 'react-bootstrap';
-import { useQuery } from "react-query"
 
-import './itemDetail.css'
+import withErrorBoundary from '../../hoc/withErrorBoundary'
+import withLoading from '../../hoc/withLoading'
+import './detailComponent.css'
 
-const useDetail = (query) => {
-    return useQuery([ query ], fetchItemDetail);
-  };
-
-const ItemDetail = ({id}) => {
-    const { data, isLoading, error } = useDetail(id);
+const DetailComponent = ({ data }) => {
     return (
         <div className="detail-container">
             <div className="row">
@@ -45,4 +39,4 @@ const ItemDetail = ({id}) => {
         );
 }
  
-export default ItemDetail;
+export default withErrorBoundary(withLoading(DetailComponent));
