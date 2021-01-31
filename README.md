@@ -39,8 +39,6 @@ $ npm run dev
 
 Abre [http://localhost:3000](http://localhost:3000) con tu navegador para ver el resultado.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
 ## 🛠️️ Comandos de construcción y pruebas unitarias🔍
 
 El proyecto tiene algunos comandos para diferentes usos. Esos mismos pueden ser vistos dentro del `package.json`.
