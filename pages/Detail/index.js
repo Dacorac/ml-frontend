@@ -6,7 +6,7 @@ import DetailContainer from '../../src/components/detailContainer'
 const DetailPage = ({ match, location}) => {
 
     return ( 
-        <Container>
+        <Container className="margin-t-16 margin-b-16">
             <DetailContainer id={match.params.id}/>
         </Container>
      );

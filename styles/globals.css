@@ -41,55 +41,59 @@ a {
 }
 
 .margin-16{
-  margin: 16px;
+  margin: 16px !important;
 }
 
 .margin-b-16 {
-  margin-bottom: 16px;
+  margin-bottom: 16px !important;
+}
+
+.margin-t-16 {
+  margin-top: 16px !important;
 }
 
 .padding-t-32 {
-  padding-top: 32px;
+  padding-top: 32px !important;
 }
 
 .padding-b-32 {
-  padding-bottom: 32px;
+  padding-bottom: 32px !important;
 }
 
 .padding-r-32 {
-  padding-right: 32px;
+  padding-right: 32px !important;
 }
 
 .padding-l-32 {
-  padding-left: 32px;
+  padding-left: 32px !important;
 }
 
 .bold {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .font-12 {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 .font-14 {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 .font-18 {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 .font-24 {
-  font-size: 24px;
+  font-size: 24px !important;
 }
 
 .font-28 {
-  font-size: 28px;
+  font-size: 28px !important;
 }
 
 .font-46 {
-  font-size: 46px;
+  font-size: 46px !important;
 }
 
 .ft-color-black {

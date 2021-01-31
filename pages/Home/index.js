@@ -5,7 +5,7 @@ import './home.css'
 
 const HomePage = () => {
     return (
-        <div>
+        <div className="bg bg-color-1">
         </div>
       );
 }

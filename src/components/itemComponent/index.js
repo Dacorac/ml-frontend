@@ -8,7 +8,7 @@ import withLoading from '../../hoc/withLoading'
 
 const ItemComponent = ({ data, isLoading, error }) => {
     return ( 
-        <Container>
+        <Container className="margin-t-16 margin-b-16">
         {data?.map((item) => (
             <div key={item.id} className="row">
                 <div  key={item.id}className="col-12">
