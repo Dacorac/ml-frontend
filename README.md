@@ -46,7 +46,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 El proyecto tiene algunos comandos para diferentes usos. Esos mismos pueden ser vistos dentro del `package.json`.
 
 ```
-$ npm run build // Contrucción del proyecto
+$ npm run build // Construcción del proyecto
 ```
 
 ```
